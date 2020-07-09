@@ -11,9 +11,7 @@ class MercadoSpider(CrawlSpider):
     # Para limitarlo a este dominio
     allowed_domain = ['www.mercadolibre.com.mx']
     # Donde realizara la busqueda
-    start_urls = ['https://listado.mercadolibre.com.mx/impresion#[A:impresoras]',
-                'https://listado.mercadolibre.com.mx/celulares#D[A:celulares]',
-                'https://listado.mercadolibre.com.mx/laptop#D[A:laptop]']
+    start_urls = ['https://listado.mercadolibre.com.mx/laptop#D[A:laptop]']
 
     #Reglas para el xpaths del boton siguientes.
     rule = {
@@ -56,3 +54,4 @@ class MercadoSpider(CrawlSpider):
             raise CloseSpider('item_exceeded')
         # Lo siguiente para que haga el bucle hasta completar.
         yield ml_item
+        
