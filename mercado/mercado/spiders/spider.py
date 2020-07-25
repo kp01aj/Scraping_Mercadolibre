@@ -53,5 +53,6 @@ class MercadoSpider(CrawlSpider):
         if self.item_cout > 20:
             raise CloseSpider('item_exceeded')
         # Lo siguiente para que haga el bucle hasta completar.
+        # proceso de bucle
         yield ml_item
         
