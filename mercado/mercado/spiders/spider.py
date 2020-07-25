@@ -55,4 +55,3 @@ class MercadoSpider(CrawlSpider):
         # Lo siguiente para que haga el bucle hasta completar.
         # proceso de bucle
         yield ml_item
-        
